@@ -67,4 +67,4 @@ const cardSwiper = new Swiper(".product-card-slider", {
   },
 });
 
-gsap.to(".turnkey-solutions");
+// gsap.to(".turnkey-solutions");

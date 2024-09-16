@@ -408,6 +408,10 @@ body {
   font-weight: 500;
 }
 
+.about-us__mobile-img {
+  display: none;
+}
+
 .about-us__info p {
   color: #222834;
   font-size: 16px;
@@ -807,6 +811,11 @@ body {
   .card-slide__inner {
     justify-content: center;
   }
+
+  .about-us__inner {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -882,6 +891,20 @@ body {
     align-items: center;
     gap: 20px 0;
   }
+
+  .about-us__mobile-img {
+    display: block;
+    margin: 30px 0;
+  }
+
+  .about-us__img {
+    display: none;
+  }
+
+  .about-us__mobile-wrapper {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -902,10 +925,24 @@ body {
 
   .promo__item::after {
     background: linear-gradient(180deg, #000 22.23%, rgba(0, 0, 0, 0.00) 49.69%, rgba(0, 0, 0, 0.00) 93.67%);
+    position: unset;
   }
 
   .promo__item-inner {
     padding: 60px 30px;
+  }
+
+  .promo__item {
+    background-image: url(../images/mobile-bg.png);
+  }
+
+  .about-us__title,
+  .about-us__title::after {
+    font-size: 28px;
+  }
+
+  .about-us__description {
+    padding: 20px;
   }
 }
 
@@ -924,5 +961,8 @@ body {
 
   .turnkey-solutions__title {
     font-size: 35px;
+  }
+  .promo__item {
+    min-height: 500px;
   }
 }
