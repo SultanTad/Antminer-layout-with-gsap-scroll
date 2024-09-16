@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="menu__list menu-left">
+            <li class="menu__item-logo">
+              <img
+                src="images/лого.svg"
+                alt="Logo Aqua System"
+                class="logo-main"
+              />
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Выбрать набор</a>
+            </li>
+            <div class="menu__line"></div>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Комплектующие</a>
+            </li>
+            <div class="menu__line"></div>
+            <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
+          </ul>
+          <ul class="menu__list menu-right">
+            <li class="menu__item">
+              <a class="menu__link phone-number" href="#">
+                <span>Связаться с нами:</span>+38 (068) 011 39 42
+              </a>
+            </li>
+            <li class="menu__item">
+              <button class="menu__btn">Заказать звонок</button>
+            </li>
+            <li class="menu__item socials">
+              <a class="socials__link" href="#">
+                <img src="images/telegram.svg" alt="" class="telegram-logo" />
+              </a>
+              <a class="socials__link" href="#">
+                <img src="images/viber-7.svg" alt="" class="viber-logo" />
+              </a>
+            </li>
+          </ul>
+          <div class="mobile-icons">
+            <img
+              class="mobile-phone-logo"
+              src="./images/mobile-phone.svg"
+              alt=""
+            />
+            <img class="burger-logo" src="./images/burger.svg" alt="" />
+          </div>
+
+          <ul class="menu-mobile">
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="#">Выбрать набор</a>
+            </li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="#">Комплектующие</a>
+            </li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="#">О нас</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="promo">
+        <div class="container">
+          <div class="swiper promo__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide promo__item">
+                <div class="promo__item-inner">
+                  <h2 class="promo__title">AquaSystem</h2>
+                  <h3 class="promo__text">Система водяного охлаждения</h3>
+                  <div class="promo__info">
+                    <dl>
+                      <dt>
+                        <img
+                          src="images/temperature-2.svg"
+                          alt=""
+                          class="logo-temperature"
+                        />
+                      </dt>
+                      <dd>Снижение температур ASIC-майнера</dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <img
+                          src="images/chart.svg"
+                          alt=""
+                          class="logo-temperature"
+                        />
+                      </dt>
+                      <dd>Домашний майнинг Bitcoin</dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <img
+                          src="images/recording.svg"
+                          alt=""
+                          class="logo-temperature"
+                        />
+                      </dt>
+                      <dd>Снижение шума до уровня домашнего ПК</dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <img
+                          src="images/heater.svg"
+                          alt=""
+                          class="logo-temperature"
+                        />
+                      </dt>
+                      <dd>Отопление и экономия помещений</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide promo__item">
+                <div class="promo__item-inner">
+                  <h2 class="promo__title">AquaSystem</h2>
+                  <h3 class="promo__text">Система водяного охлаждения</h3>
+                  <div class="promo__info">
+                    <dl>
+                      <dt>
+                        <img
+                          src="images/temperature-2.svg"
+                          alt=""
+                          class="logo-temperature"
+                        />
+                      </dt>
+                      <dd>Снижение температур ASIC-майнера</dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <img
+                          src="images/chart.svg"
+                          alt=""
+                          class="logo-temperature"
+                        />
+                      </dt>
+                      <dd>Домашний майнинг Bitcoin</dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <img
+                          src="images/recording.svg"
+                          alt=""
+                          class="logo-temperature"
+                        />
+                      </dt>
+                      <dd>Снижение шума до уровня домашнего ПК</dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <img
+                          src="images/heater.svg"
+                          alt=""
+                          class="logo-temperature"
+                        />
+                      </dt>
+                      <dd>Отопление и экономия помещений</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide promo__item">
+                <div class="promo__item-inner">
+                  <h2 class="promo__title">AquaSystem</h2>
+                  <h3 class="promo__text">Система водяного охлаждения</h3>
+                  <div class="promo__info">
+                    <dl>
+                      <dt>
+                        <img
+                          src="images/temperature-2.svg"
+                          alt=""
+                          class="logo-temperature"
+                        />
+                      </dt>
+                      <dd>Снижение температур ASIC-майнера</dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <img
+                          src="images/chart.svg"
+                          alt=""
+                          class="logo-temperature"
+                        />
+                      </dt>
+                      <dd>Домашний майнинг Bitcoin</dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <img
+                          src="images/recording.svg"
+                          alt=""
+                          class="logo-temperature"
+                        />
+                      </dt>
+                      <dd>Снижение шума до уровня домашнего ПК</dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <img
+                          src="images/heater.svg"
+                          alt=""
+                          class="logo-temperature"
+                        />
+                      </dt>
+                      <dd>Отопление и экономия помещений</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination promo__pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mobile-promo__info">
+        <div class="container">
+          <div class="promo-info__inner">
+            <dl>
+              <dt>
+                <img
+                  src="images/temperature-2.svg"
+                  alt=""
+                  class="logo-temperature"
+                />
+              </dt>
+              <dd>Снижение температур ASIC-майнера</dd>
+            </dl>
+            <dl>
+              <dt>
+                <img src="images/chart.svg" alt="" class="logo-temperature" />
+              </dt>
+              <dd>Домашний майнинг Bitcoin</dd>
+            </dl>
+            <dl>
+              <dt>
+                <img
+                  src="images/recording.svg"
+                  alt=""
+                  class="logo-temperature"
+                />
+              </dt>
+              <dd>Снижение шума до уровня домашнего ПК</dd>
+            </dl>
+            <dl>
+              <dt>
+                <img src="images/heater.svg" alt="" class="logo-temperature" />
+              </dt>
+              <dd>Отопление и экономия помещений</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="turnkey-solutions">
+        <div class="container">
+          <div class="turnkey-solutions__header">
+            <h2 class="turnkey-solutions__title">Готовые решения</h2>
+            <div class="turnkey-solutions__crypto">
+              <button class="turnkey-solutions__crypto-btn">
+                Bitcoin
+                <img
+                  src="images/bitcoin.svg"
+                  alt="Bitcoin-logo"
+                  class="bitcoin-logo"
+                />
+              </button>
+              <button class="turnkey-solutions__crypto-btn">
+                Equihash
+                <img
+                  src="images/eth.svg"
+                  alt="Etherium-logo"
+                  class="etherium-logo"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="swiper product-card-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card-slide">
+                <img
+                  src="images/gradient.webp"
+                  alt=""
+                  class="card-slide__gradient"
+                />
+                <div class="card-slide__inner">
+                  <div class="card-slide__info">
+                    <h2 class="card-slide__title">
+                      Система охлаждения Antminer S19 hydro
+                    </h2>
+                    <div class="card-slide__list">
+                      <div class="card-slide__item">
+                        <img src="images/asic.svg" alt="" class="item-img" />
+                        <span>Разгон: 112Th</span>
+                      </div>
+                      <div class="card-slide__item">
+                        <img src="images/heater.svg" alt="" class="item-img" />
+                        <span>Отопление дома</span>
+                      </div>
+                      <div class="card-slide__item">
+                        <img
+                          src="images/recording.svg"
+                          alt=""
+                          class="item-img"
+                        />
+                        <span>Снижение шума до уровня ПК</span>
+                      </div>
+                    </div>
+                    <div class="card-slide__bottom">
+                      <button class="card-slide__btn">Подробнее</button>
+                      <span class="card-slide__price">от 800$</span>
+                    </div>
+                  </div>
+                  <img
+                    src="images/antminer.webp"
+                    alt=""
+                    class="card-slide__img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide card-slide">
+                <img
+                  src="images/gradient.webp"
+                  alt=""
+                  class="card-slide__gradient"
+                />
+                <div class="card-slide__inner">
+                  <div class="card-slide__info">
+                    <h2 class="card-slide__title">
+                      Система охлаждения Antminer S19 hydro
+                    </h2>
+                    <div class="card-slide__list">
+                      <div class="card-slide__item">
+                        <img src="images/asic.svg" alt="" class="item-img" />
+                        <span>Разгон: 112Th</span>
+                      </div>
+                      <div class="card-slide__item">
+                        <img src="images/heater.svg" alt="" class="item-img" />
+                        <span>Отопление дома</span>
+                      </div>
+                      <div class="card-slide__item">
+                        <img
+                          src="images/recording.svg"
+                          alt=""
+                          class="item-img"
+                        />
+                        <span>Снижение шума до уровня ПК</span>
+                      </div>
+                    </div>
+                    <div class="card-slide__bottom">
+                      <button class="card-slide__btn">Подробнее</button>
+                      <span class="card-slide__price">от 800$</span>
+                    </div>
+                  </div>
+                  <img
+                    src="images/antminer.webp"
+                    alt=""
+                    class="card-slide__img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide card-slide">
+                <img
+                  src="images/gradient.webp"
+                  alt=""
+                  class="card-slide__gradient"
+                />
+                <div class="card-slide__inner">
+                  <div class="card-slide__info">
+                    <h2 class="card-slide__title">
+                      Система охлаждения Antminer S19 hydro
+                    </h2>
+                    <div class="card-slide__list">
+                      <div class="card-slide__item">
+                        <img src="images/asic.svg" alt="" class="item-img" />
+                        <span>Разгон: 112Th</span>
+                      </div>
+                      <div class="card-slide__item">
+                        <img src="images/heater.svg" alt="" class="item-img" />
+                        <span>Отопление дома</span>
+                      </div>
+                      <div class="card-slide__item">
+                        <img
+                          src="images/recording.svg"
+                          alt=""
+                          class="item-img"
+                        />
+                        <span>Снижение шума до уровня ПК</span>
+                      </div>
+                    </div>
+                    <div class="card-slide__bottom">
+                      <button class="card-slide__btn">Подробнее</button>
+                      <span class="card-slide__price">от 800$</span>
+                    </div>
+                  </div>
+                  <img
+                    src="images/antminer.webp"
+                    alt=""
+                    class="card-slide__img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide card-slide">
+                <img
+                  src="images/gradient.webp"
+                  alt=""
+                  class="card-slide__gradient"
+                />
+                <div class="card-slide__inner">
+                  <div class="card-slide__info">
+                    <h2 class="card-slide__title">
+                      Система охлаждения Antminer S19 hydro
+                    </h2>
+                    <div class="card-slide__list">
+                      <div class="card-slide__item">
+                        <img src="images/asic.svg" alt="" class="item-img" />
+                        <span>Разгон: 112Th</span>
+                      </div>
+                      <div class="card-slide__item">
+                        <img src="images/heater.svg" alt="" class="item-img" />
+                        <span>Отопление дома</span>
+                      </div>
+                      <div class="card-slide__item">
+                        <img
+                          src="images/recording.svg"
+                          alt=""
+                          class="item-img"
+                        />
+                        <span>Снижение шума до уровня ПК</span>
+                      </div>
+                    </div>
+                    <div class="card-slide__bottom">
+                      <button class="card-slide__btn">Подробнее</button>
+                      <span class="card-slide__price">от 800$</span>
+                    </div>
+                  </div>
+                  <img
+                    src="images/antminer.webp"
+                    alt=""
+                    class="card-slide__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-nav-btns">
+              <div class="swiper-button-left card-btn">
+                <img src="images/arrow-left.svg" alt="" class="arrow-left" />
+              </div>
+              <button class="show-more">Показать еще</button>
+              <div class="swiper-button-right card-btn">
+                <img src="images/arrow-right.svg" alt="" class="arrow-right" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <div class="container">
+          <div class="about-us__inner">
+            <div class="about-us__info">
+              <h2 class="about-us__title">
+                Что такое система водяного охлаждения
+              </h2>
+              <p>
+                Разрабокта компании AquaSystems - модификации стандартного
+                охлаждения асик майнеров 19 15 и 11 серий , что заменяет шумные
+                куллера асиков и стандартный радиатор на водоблоки.
+              </p>
+              <div class="about-us__description">
+                <img
+                  src="images/checkbox.svg"
+                  alt=""
+                  class="description__checkbox"
+                />
+                <span
+                  >Модификация снижает выделение шума практически на
+                  100-150%.</span
+                >
+              </div>
+              <div class="about-us__description">
+                <img
+                  src="images/checkbox.svg"
+                  alt=""
+                  class="description__checkbox"
+                />
+                <span
+                  >Уровень шума снижается до уровня домашнего Пк и позволяет
+                  установить асик майнер у Вас дома либо в любом другом
+                  помещение с возможностью отапливать и экономить на этом.</span
+                >
+              </div>
+            </div>
+            <img
+              src="images/AquaBlue.webp"
+              alt="AquaBlue-image"
+              class="about-us__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="differences">
+        <div class="container">
+          <h2 class="differences__title">
+            Чем отличается Hydro от заводского охлаждения?
+          </h2>
+          <div class="differences__inner">
+            <img
+              src="images/градиент.svg"
+              alt="gradient"
+              class="diff-gradient"
+            />
+            <div class="differences__info">
+              <div class="info-block-left">
+                <h2 class="info-block-left__title">
+                  Система водяного охлаждения Antminer Hydro
+                </h2>
+                <img
+                  src="images/diff-left-img.svg"
+                  alt=""
+                  class="info-block-left__img"
+                />
+              </div>
+              <div class="info-block-center">
+                <div class="differences__list">
+                  <div class="differences__item left">130 Тн</div>
+                  <div class="differences__item center">Разгон</div>
+                  <div class="differences__item right">110 Тн</div>
+                </div>
+                <div class="differences__list">
+                  <div class="differences__item left">Да (40 дб)</div>
+                  <div class="differences__item center">Безшумный</div>
+                  <div class="differences__item right">Нет (90 дб)</div>
+                </div>
+                <div class="differences__list">
+                  <div class="differences__item left">Да</div>
+                  <div class="differences__item center">
+                    Отопление помещений
+                  </div>
+                  <div class="differences__item right">Нет</div>
+                </div>
+                <div class="differences__list">
+                  <div class="differences__item left">Да</div>
+                  <div class="differences__item center">Домашний майнинг</div>
+                  <div class="differences__item right">Нет</div>
+                </div>
+                <button class="info-block-center__btn">
+                  Заказать консультацию
+                </button>
+              </div>
+              <div class="info-block-right">
+                <h2 class="info-block-right__title">
+                  Стандартное заводское воздушное охлаждение
+                </h2>
+                <img src="images/standart.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="kits-for-antmainers">
+        <div class="container">
+          <div class="kits-for-antmainers__wrapper">
+            <div class="description__kits">
+              <div class="description__btns">
+                <button
+                  class="kits__btn kits__btn--active"
+                  data-tabs-path="full-kit"
+                >
+                  Комплект полный
+                </button>
+                <button class="kits__btn" data-tabs-path="partial-kit">
+                  Комплект частичный
+                </button>
+              </div>
+              <div
+                class="tabs__content tabs__content--active"
+                data-tabs-target="full-kit"
+              >
+                <h2 class="description__title">
+                  Полный комплект для Bitmain Antminer
+                </h2>
+                <p class="description__text">
+                  Готовый к установке и експлуатации комплект для домашнего
+                  майнинга без подключения в системы отопления дома или горячего
+                  водоснабжения
+                </p>
+                <h4 class="description__subtitle">В комплекте:</h4>
+                <div class="description__list">
+                  <div class="description__item"><span>01.</span>Радиатор</div>
+                  <div class="description__item"><span>02.</span>Помпа</div>
+                  <div class="description__item"><span>03.</span>Патрубки</div>
+                  <div class="description__item">
+                    <span>04.</span>Аква блоки на 3 платы ( 3 шт)
+                  </div>
+                  <div class="description__item">
+                    <span>05.</span>Модифицированный блок питания
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__content" data-tabs-target="partial-kit">
+                <h2 class="description__title">
+                  Частичный комплект для Bitmain Antminer
+                </h2>
+                <p class="description__text">
+                  Готовый к установке и эксплуатации комплект для домашнего
+                  майнинга без подключения в системы отопления дома или горячего
+                  водоснабжения
+                </p>
+                <h4 class="description__subtitle">В комплекте:</h4>
+                <div class="description__list">
+                  <div class="description__item"><span>01.</span>Радиатор</div>
+                  <div class="description__item"><span>02.</span>Помпа</div>
+                  <div class="description__item"><span>03.</span>Патрубки</div>
+                  <div class="description__item">
+                    <span>04.</span>Аква блоки на 3 платы ( 3 шт)
+                  </div>
+                  <div class="description__item">
+                    <span>05.</span>Модифицированный блок питания
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="images__kits">
+              <div class="big__img">
+                <img src="images/antminer.webp" alt="" />
+              </div>
+              <div class="small__images">
+                <img src="images/description-item.webp" alt="" />
+                <img src="images/description-item.webp" alt="" />
+                <img src="images/description-item.webp" alt="" />
+                <img src="images/description-item.webp" alt="" />
+                <img src="images/description-item.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="where-system-used">
+        <div class="container">
+          <h2 class="where-system-used__title">
+            Где применяют систему
+            <span>AquaSystem Hydro?</span>
+          </h2>
+          <div class="where-system-used__inner">
+            <div class="where-system-used__box block1">
+              <div class="img-wrapper">
+                <img
+                  class="where-system-used__img"
+                  src="./images/cryptocurrency2.svg"
+                  alt=""
+                />
+              </div>
+              <h2 class="block1__title">В квартирах</h2>
+              <p class="where-system-used__text">
+                В домашний условиях можно было размещать асики , но потолок
+                размещения упирался в выделение шума и тепла асиком в помещение.
+                Что бы создать звукоизоляцию необходимо было обшивать помещение
+                и полностью изолировать его. С Системой СВО AquaSystem — теперь
+                возможно размещать Асики хоть в кладовке конвертируя тепло Асика
+                в отопление пола и всей квартиры!
+              </p>
+              <img class="block1__bg-img" src="./images/Ellipse13.svg" alt="" />
+            </div>
+            <div class="where-system-used__box block2">
+              <div class="img-wrapper">
+                <img
+                  class="where-system-used__img"
+                  src="./images/smart-home1.svg"
+                  alt=""
+                />
+              </div>
+              <h2 class="block1__title">Для дачи или дома</h2>
+              <p class="where-system-used__text">
+                Средний майнер держит у себя от 1 до 5 асиков и очень часто
+                размещение таких асиков это частные дома или загородние (дачи)
+                дома. Майня дома без СВО зимой — вы теряете ещё одну возможность
+                зарабатывать на экономии, заменяя отопление от котла на
+                отопление от СВО AquaSystem Hydro
+              </p>
+              <img class="block2__bg-img" src="./images/block2-bg.svg" alt="" />
+            </div>
+            <div class="where-system-used__box block3">
+              <div class="img-wrapper">
+                <img
+                  class="where-system-used__img"
+                  src="./images/skyline1.svg"
+                  alt=""
+                />
+              </div>
+              <h2 class="block1__title">
+                Для предприятий и многоквартирных домов
+              </h2>
+              <p class="where-system-used__text">
+                Майнинг в промышленных помещениях или многоквартирных домах ,
+                позволит окупить затраты на ЭЭ очень просто — перевести
+                тепловиделение от МАЙНИНГ оборудования в отопление дома.
+                Несколько десятков устройств способно поддерживать температуру в
+                помещениях в приделах 20* градусов зимой
+              </p>
+              <img class="block3__bg-img" src="./images/block3-bg.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-product">
+        <div class="container">
+          <div class="order-product__inner">
+            <div class="order-product__content">
+              <h2 class="order-product__title">
+                Закажите лучшую систему для охлаждения Asic-майнера уже сегодня!
+              </h2>
+              <p class="order-product__text">
+                По согласованию с менеджером , вы сможете заказать любую
+                комплектность посавки. Либо выбрать уже из готовых на сайте или
+                после согласования с менеджером.
+              </p>
+              <div class="order-product__btns">
+                <button class="contact-telegram">Связаться в Telegram</button>
+                <button class="request-call">Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__list footer-left">
+            <li class="footer__item">
+              <img
+                src="images/лого.svg"
+                alt="Logo Aqua System"
+                class="logo-main"
+              />
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Выбрать набор</a>
+            </li>
+            <div class="footer__line"></div>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Комплектующие</a>
+            </li>
+            <div class="footer__line"></div>
+            <li class="footer__item">
+              <a class="footer__link" href="#">О нас</a>
+            </li>
+          </ul>
+          <ul class="footer__list footer-right">
+            <li class="footer__item">
+              <a class="footer__link phone-number" href="#">
+                <span>Связаться с нами:</span>+38 (068) 011 39 42
+              </a>
+            </li>
+            <li class="footer__item">
+              <button class="footer__btn">Заказать звонок</button>
+            </li>
+            <li class="footer__item socials">
+              <a class="socials__link" href="#">
+                <img src="images/telegram.svg" alt="" class="telegram-logo" />
+              </a>
+              <a class="socials__link" href="#">
+                <img src="images/viber-7.svg" alt="" class="viber-logo" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
