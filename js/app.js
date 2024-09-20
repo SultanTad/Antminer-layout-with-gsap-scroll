@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 const descriptionKits = document.querySelector(".description__kits");
 const kitsBtn = document.querySelectorAll(".kits__btn");
 const tabsContent = document.querySelectorAll(".tabs__content");
@@ -66,5 +64,25 @@ const cardSwiper = new Swiper(".product-card-slider", {
     },
   },
 });
+gsap.registerPlugin(ScrollTrigger);
 
-// gsap.to(".turnkey-solutions");
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".turnkey-solutions",
+    start: "top 80%",
+  },
+});
+
+tl.from(".turnkey-solutions", {
+  y: 300,
+  duration: 2,
+});
+
+tl.from(
+  ".about-us",
+  {
+    y: 300,
+    duration: 2,
+  },
+  "+=0.5"
+);

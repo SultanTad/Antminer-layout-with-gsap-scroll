@@ -445,6 +445,21 @@ body {
 
 .differences {
   margin-bottom: 80px;
+  margin-top: 30px;
+}
+
+.differences__title {
+  font-size: 40px;
+  font-family: "TTNormsPro-Medium";
+  color: #222834;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.differences__title span {
+  color: #06f;
+  display: block;
 }
 
 .differences__inner {
@@ -469,6 +484,15 @@ body {
   justify-content: center;
 }
 
+.mobile__info-block {
+  display: none;
+}
+
+.mobile__info-left__img,
+.mobile__info-right__img {
+  display: none;
+}
+
 .info-block-left__img {
   position: absolute;
   bottom: 0;
@@ -480,6 +504,11 @@ body {
   margin-bottom: 31px;
   max-width: 350px;
   text-align: center;
+  font-weight: 500;
+}
+
+.mobile__info-left__title {
+  display: none;
 }
 
 .info-block-center {
@@ -507,6 +536,7 @@ body {
 .differences__list {
   display: flex;
   gap: 0 7px;
+  width: 100%;
 }
 
 .differences__item {
@@ -514,6 +544,7 @@ body {
   line-height: 20px;
   padding: 10px;
   text-align: center;
+  width: 100%;
 }
 
 .differences__item.left {
@@ -546,6 +577,10 @@ body {
   text-align: center;
   font-size: 24px;
   font-weight: 500;
+}
+
+.mobile__info-right__title {
+  display: none;
 }
 
 .info-block-right img {
@@ -816,6 +851,38 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
+  .about-us__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us__title,
+  .about-us__info p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mobile__info-block {
+    display: flex;
+  }
+
+  .info-block-left,
+  .info-block-right {
+    display: none;
+  }
+
+  .info-block-center {
+    margin-bottom: 30px;
+  }
+
+  .differences__info {
+    justify-content: unset;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -861,7 +928,7 @@ body {
   .promo__info {
     display: none;
   }
-  
+
   .mobile-promo__info {
     display: block;
     margin-top: 20px;
@@ -905,6 +972,58 @@ body {
     display: flex;
     justify-content: center;
   }
+
+  .tablet__info-left__img,
+  .tablet__info-right__img {
+    display: none;
+  }
+
+  .mobile__info-left__img,
+  .mobile__info-right__img {
+    display: block;
+  }
+
+  .mobile__info-block__right,
+  .mobile__info-block__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-block-left__title,
+  .info-block-right__title {
+    display: none;
+  }
+
+  .mobile__info-left__title {
+    margin-bottom: 25px;
+    max-width: 70px;
+  }
+
+  .mobile__info-right__title {
+    margin-bottom: 10px;
+    max-width: 150px;
+  }
+
+  .mobile__info-left__title,
+  .mobile__info-right__title {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .differences__title {
+    font-size: 28px;
+  }
+
+  .diff-gradient {
+    width: 300px;
+  }
+
+  .info-block-center {
+    padding-top: 30px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -924,7 +1043,12 @@ body {
   }
 
   .promo__item::after {
-    background: linear-gradient(180deg, #000 22.23%, rgba(0, 0, 0, 0.00) 49.69%, rgba(0, 0, 0, 0.00) 93.67%);
+    background: linear-gradient(
+      180deg,
+      #000 22.23%,
+      rgba(0, 0, 0, 0) 49.69%,
+      rgba(0, 0, 0, 0) 93.67%
+    );
     position: unset;
   }
 
@@ -943,6 +1067,28 @@ body {
 
   .about-us__description {
     padding: 20px;
+  }
+
+  .differences__item.center {
+    max-width: 185px;
+    width: 100%;
+    min-width: unset;
+  }
+
+  .differences__item.center span {
+    display: none;
+  }
+
+  .differences__list {
+    height: 40px;
+    gap: 0 5px;
+  }
+
+  .differences__item.center {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -964,5 +1110,18 @@ body {
   }
   .promo__item {
     min-height: 500px;
+  }
+
+  .info-block-center {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+
+  .differences__item.left,
+  .differences__item.right {
+    min-width: unset;
+    max-width: 110px;
+    padding: 10px 0;
   }
 }
